@@ -28,8 +28,17 @@ html {
 }
 
 .head-text {
-  @apply xl:text-[10rem] text-[6rem] xl:leading-[11rem] leading-[7rem] font-black text-black;
+  @apply xl:text-[10rem] text-[6rem] xl:leading-[11rem] leading-[7rem] font-black;
+  color: #007BFF; /* Change this to your desired color */
+  animation: color-change 3s infinite;
 }
+
+@keyframes color-change {
+  0% { color: #007BFF; }
+  50% { color: #00e508; }
+  100% { color: #eb3675; }
+}
+
 
 .download-btn {
   @apply w-14 h-14 flex justify-center items-center rounded-full glassmorphism cursor-pointer outline-none;
